@@ -9,8 +9,9 @@ export default function Sidebar() {
   const menuItems = [
     { href: '/', icon: <LayoutDashboard size={20}/>, label: '대시보드' },
     { href: '/write', icon: <PenLine size={20}/>, label: 'AI 글 생성' },
-    { href: '/projects', icon: <Folders size={20}/>, label: '프로젝트 관리' },
-    { href: '/guide', icon: <BookOpen size={20}/>, label: '작성 가이드' },
+    { href: '/hospitals', icon: <Hospital size={20}/>, label: '병원 관리' },     // 병원 등록/삭제
+   { href: '/projects', icon: <Folders size={20}/>, label: '프로젝트 관리' },   // 작성된 글 목록 & 모달
+  { href: '/guide', icon: <BookOpen size={20}/>, label: '작성 가이드' },      // SEO 로직 수정
   ];
 
   return (
