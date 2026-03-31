@@ -1,7 +1,7 @@
 "use client";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, PenLine, BookOpen, Folders, UserCircle } from 'lucide-react';
+import { LayoutDashboard, PenLine, Hospital, Folders, BookOpen, UserCircle } from 'lucide-react';
 
 export default function Sidebar() {
   const pathname = usePathname();
