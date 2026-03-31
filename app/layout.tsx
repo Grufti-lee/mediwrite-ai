@@ -1,14 +1,17 @@
-import './globals.css'; // 이 줄이 디자인을 연결합니다.
-
-export const metadata = {
-  title: 'MediWrite AI Pro',
-  description: 'AI 기반 병원 마케팅 솔루션',
-}
+import './globals.css';
+import Sidebar from '@/components/Sidebar';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <body className="bg-[#FBFBFB]">{children}</body>
+      <body className="flex bg-[#FBFBFB] min-h-screen text-[#37352F]">
+        {/* 좌측 사이드바 */}
+        <Sidebar />
+        {/* 우측 메인 콘텐츠 */}
+        <main className="flex-1 overflow-y-auto">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
